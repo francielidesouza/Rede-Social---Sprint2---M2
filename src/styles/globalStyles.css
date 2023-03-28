@@ -1,0 +1,77 @@
+:root {
+
+    /* COLORS */
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+
+    --grey-0: #0A0C0D;
+    --grey-1: #212529;
+    --grey-2: #495057;
+    --grey-3: #868E96;
+    --grey-4: #DEE2E6;
+    --grey-5: #F8F9FA;
+
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+    
+    --white-1: #FFFFFF;
+
+    --red-1: #D7443E;
+
+    /* BORDERS */
+    --radius-1: 0.125rem; /*2px*/
+    --radius-2: 0.25rem; /*4px*/
+    --radius-3: 0.5rem; /*8x*/
+
+
+    /* FONTS SIZE */
+    --font-size-1: 1.75rem;
+    /*28 px*/
+    --font-size-2: 1.25rem;
+    /*20 px*/
+    --font-size-3: 1rem;
+    /*16 px*/
+    --font-size-4: 0.875rem;
+    /*14 px*/
+    --font-size-5: 0.75rem;
+    /*12 px*/
+
+    /* FONTS WEIGHT */
+    --font-700: 700;
+    --font-600: 600;
+    --font-400: 400;
+
+    /* LINE HEIGHT */
+    --line-height-1: 2.5rem; /* 40px */
+    --line-height-2: 1.75rem; /* 28px */
+    --line-height-3: 1.5rem; /* 24px */
+    --line-height-4: 1rem; /* 16px */
+
+    /* FONT DEFAULT */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Nunito', sans-serif;  MODAL BUTTON X*/
+}
+
+body {
+    background-color: var(--white-1);
+    border-radius: var(--radius-3);
+
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: var(--grey-1);
+
+    width: 100vw;
+    height: 76px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+

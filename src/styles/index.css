@@ -1,0 +1,360 @@
+.nav__container {
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__btn {
+    background-color: transparent;
+    color: var(--white-1);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-400);
+}
+
+.main__container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__container--form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6.25rem;
+}
+
+.section__container--form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-left: 2.5rem;
+    width: 80%;
+    height: 20rem;
+}
+
+.container__user {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.img {
+    width: 52px;
+    height: 52px;
+}
+
+.container__user--data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem
+}
+
+.user__name {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-600);
+    line-height: var(--line-height-3);
+    color: var(--grey-1);
+}
+
+.user__profession {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-400);
+    line-height: var(--line-height-4);
+    color: var(--grey-2);
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.form__input--text,
+.form__input--textarea {
+
+    border-radius: var(--radius-2);
+    border: 2px solid var(--grey-4);
+
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form__input--text{
+    height: 2.9375rem;
+}
+
+.form__input--textarea {
+    height: 5.9375rem;
+}
+
+.form__input--text::placeholder,
+.form__input--textarea::placeholder {
+
+    background-color: var(--white-1);
+    color: var(--grey-3);
+    font-weight: var(--font-400);
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-4);
+  
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.form__input--text:focus::placeholder,
+.form__input--textarea:focus::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.form__input--text:focus,
+.form__input--textarea:focus {
+    border: 2px solid var(--brand-2);
+}
+
+.btn {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-600);
+}
+
+.btn__form {
+    background-color: var(--grey-4);
+    color: var(--grey-3);
+
+    border: 2px solid var(--grey-4);
+    border-radius: var(--radius-2);
+
+    padding: 0.5625rem;
+    align-self: flex-end;
+
+    position: absolute;
+    right: 0;
+    top: 190px;
+}
+
+.btn__form:hover {
+    background-color: var(--brand-2);
+    color: var(--white-1);
+}
+
+.aside__container--suggestions {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 2.5rem;
+
+    width: 50%;
+}
+
+.listCard__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    position: sticky;
+    top: 100px
+}
+
+.listCard__title {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-600);
+    line-height: var(--line-height-3);
+
+    color: var(--grey-1);
+}
+
+.card__container {
+    display: flex;
+    overflow-x: scroll;
+    width: 155%;
+}
+
+.card__users {
+    min-width: 70%;
+    margin: 10px;
+}
+
+.card__btn--follow {
+    color: var(--grey-1);
+    background-color: transparent;
+
+    border: 1px solid var(--grey-1);
+    border-radius: var(--radius-1);
+    margin-top: 0.4375rem;
+    padding: 0.375rem 0.75rem;
+}
+
+.card__btn--follow:hover{
+    color: var(--brand-1);
+    border-color: var(--brand-1);
+    background-color: var(--white-1);
+}
+
+.card__btn--following {
+    color: var(--white-1);
+    background-color: var(--brand-1);
+    border-color: var(--brand-1);
+}
+
+
+.section__container--posts {
+    width: 100%;
+}
+
+.section__container--article {
+    padding: 2.25rem;
+}
+
+.listPosts__container {
+
+    width: 100%;
+}
+
+.container__card--posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 28px 0;
+    width: 100%;
+}
+
+.section__title {
+    margin-bottom: 2.25rem;
+}
+
+.section__title,
+.card__article--title {
+    font-size: var(--font-size-1);
+    font-weight: var(--font-700);
+    line-height: var(--line-height-1);
+
+    color: var(--grey-1);
+}
+
+.card__article--description {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-400);
+    line-height: var(--line-height-1);
+
+    color: var(--grey-1);
+}
+
+.card__container__footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.card__btn--post {
+    padding: 0.625rem 0.9375rem;
+    border-radius: var(--radius-2);
+
+    background-color: var(--grey-1);
+    color: var(--white-1);
+    margin-right: 20px;
+}
+
+.card__btn--post:hover{
+background-color: var(--grey-0);
+}
+
+.img__icone {
+    width: 36px;
+    height: 36px;
+    filter:grayscale(100%)
+}
+
+.img__icone:hover{
+    filter:grayscale(0%)
+}
+
+.img__like{
+background-image: url('./../assets/img/coracaoVermelho.png');
+background-repeat: no-repeat;
+
+width: 36px;
+height: 36px;
+}
+
+.img__icone{
+    background-image: url('./../assets/img/coracao.png');
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+
+
+@media (min-width: 600px) {
+    .main__container--form {
+        flex-direction: row;
+        position: relative;
+
+        margin-top: 150px;
+    }
+
+
+    .section__container--form {
+        width: 50%;
+       
+        margin-left: 6.5rem;
+    }
+
+    .btn__form {
+        background-color: var(--brand-1);
+        color: var(--white-1);
+        border: 2px solid var(--brand-1);
+    }
+
+    .section__container--posts {
+        padding-left: 4.5rem;
+    }
+
+    .aside__container--suggestions {
+        width: 34%;
+        height: 700%;
+
+        position: absolute;
+        right: 4.375rem;
+
+        align-items: center;
+    }
+
+    .listCard__container {
+        min-width: 80%;
+    }
+
+    .card__container {
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .card__users {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .listPosts__container {
+        width: 50%;
+    }
+
+    .btn, .img__icone{
+        cursor: pointer;
+    }
+
+
+}

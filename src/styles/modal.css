@@ -1,0 +1,47 @@
+.modal__container{
+    width: 80%;
+    min-height: 58%;
+
+    border-radius: var(--radius-3);
+    border-color: var(--white-1);
+
+}
+
+.container__card--modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 28px 0;
+    width: 100%;
+
+    position: relative;
+}
+
+
+.button__modal{
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--font-size-1);
+    color: var(--grey-3);
+    background-color: var(--white-1);
+    align-self: flex-end;
+
+    width: 25px;
+    height: 25px;   
+
+    position: absolute;
+    top: 10px;
+    
+}
+
+@media (min-width: 600px) {
+    .modal__container{
+        width: 50%;
+        height: 39%;
+        
+        position: absolute;
+        top: -134px;
+        right: 5px;
+        overflow-y: hidden;
+    }
+
+}

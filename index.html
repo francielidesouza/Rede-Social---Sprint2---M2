@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+
+    <!-- FONTAWERSOME -->
+    <script src="https://kit.fontawesome.com/309f18f62b.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./src/scripts/users.js" defer></script>
+    <script src="./src/scripts/posts.js" defer></script>
+    <script src="./src/scripts/sugestUsers.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+
+    <title>S2-11 🏁 Entrega - Rede Social</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav__container">
+            <img src="./src/assets/img/logo.svg" alt="Logo Tech Posters">
+            <span class="nav__btn">Sair</span>
+        </nav>
+    </header>
+
+    <main class="main__container">
+        <div class="main__container--form">
+            <section class="section__container--form">
+                <div class="container__user">
+                    <figure>
+                        <img class="img" src="./src/assets/img/user1.svg" alt="Foto de Usuário">
+                    </figure>
+
+                    <div class="container__user--data">
+                        <h2 class="user__name">Samuel Leão</h2>
+                        <small class="user__profession">Front and Engineer</small>
+                    </div>
+                </div>
+
+                <form class="container__form">
+                    <legend hidden>Formulário de Posts</legend>
+                    <label for="title"></label>
+                    <input class="form__input--text" type="text" id="title" name="title"
+                        placeholder="Digitar título do post">
+
+                    <label for="description"></label>
+                    <textarea class="form__input--textarea" type="textarea" id="description" name="description"
+                        placeholder="Digitar descrição do post"></textarea>
+                    <button class="btn btn__form" type="submit">Postar</button>
+                </form>
+            </section>
+
+            <aside class="aside__container--suggestions">
+
+                <ul class="listCard__container">
+                    <h2 class="listCard__title">Sugestões para você seguir</h2>
+                    <div class="card__container">
+                    </div>
+                </ul>
+            </aside>
+        </div>
+
+        <section class="section__container--posts">
+            <div class="section__container--article">
+                <h1 class="section__title">Posts</h1>
+
+                <ul class="listPosts__container">
+                </ul>
+            </div>
+        </section>
+            <dialog class="modal__container">
+                
+            </dialog>
+    </main>
+</body>
+
+
+</html>
